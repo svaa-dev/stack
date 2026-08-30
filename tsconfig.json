@@ -6,8 +6,10 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "paths": {
-      "@/layouts/*": ["./src/layouts/*"],
-      "@/styles/*": ["./src/styles/*"]
+      "@/assets/*": ["./src/client/assets/*"],
+      "@/components/*": ["./src/client/components/*"],
+      "@/layouts/*": ["./src/client/layouts/*"],
+      "@/styles/*": ["./src/client/styles/*"]
     }
   }
 }
