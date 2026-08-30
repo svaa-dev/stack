@@ -7,6 +7,8 @@
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.linkedEditing": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "One Dark Pro Night Flat",
