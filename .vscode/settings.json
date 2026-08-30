@@ -1,0 +1,17 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.glyphMargin": false,
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.linkedEditing": true,
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "One Dark Pro Night Flat",
+  "workbench.iconTheme": "symbols",
+  "explorer.autoReveal": false,
+  "breadcrumbs.enabled": false,
+  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" }
+}
