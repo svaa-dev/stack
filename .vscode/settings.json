@@ -13,5 +13,6 @@
   "workbench.iconTheme": "symbols",
   "explorer.autoReveal": false,
   "breadcrumbs.enabled": false,
+  "files.eol": "\n",
   "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" }
 }
