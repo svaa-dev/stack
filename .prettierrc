@@ -13,5 +13,6 @@
   "bracketSpacing": true,
   "objectWrap": "preserve",
   "bracketSameLine": false,
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  "endOfLine": "lf"
 }
