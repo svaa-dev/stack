@@ -15,7 +15,10 @@
   "workbench.iconTheme": "symbols",
   "explorer.autoReveal": false,
   "breadcrumbs.enabled": false,
+  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "files.eol": "\n",
-  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" },
-  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"]
+  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" }
 }
