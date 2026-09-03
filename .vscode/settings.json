@@ -1,24 +1,9 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.minimap.enabled": false,
-  "editor.fontFamily": "FiraCode Nerd Font",
-  "editor.glyphMargin": false,
-  "editor.fontLigatures": true,
-  "editor.wordWrap": "on",
-  "editor.linkedEditing": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "workbench.sideBar.location": "right",
-  "workbench.activityBar.location": "hidden",
-  "workbench.colorTheme": "One Dark Pro Night Flat",
-  "workbench.iconTheme": "symbols",
-  "explorer.autoReveal": false,
-  "breadcrumbs.enabled": false,
-  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
   "files.eol": "\n",
+  "files.associations": { "*.css": "tailwindcss" },
   "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" }
 }
