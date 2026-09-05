@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "worker": "wrangler dev",
+    "deploy": "bun run build && wrangler deploy",
     "dev": "concurrently \"bun run client\" \"bun run worker\""
   },
   "dependencies": {
