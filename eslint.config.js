@@ -5,7 +5,7 @@ import jsxA11y from 'eslint-plugin-jsx-a11y'
 
 export default [
   {
-    ignores: ['dist/**', '.astro/**', 'node_modules/**']
+    ignores: ['dist/**', '.astro/**', 'node_modules/**', '.wrangler/**']
   },
   jsxA11y.flatConfigs.recommended,
   js.configs.recommended,
