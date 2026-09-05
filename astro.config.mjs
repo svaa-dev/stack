@@ -6,6 +6,11 @@ export default defineConfig({
   srcDir: 'src/client',
   integrations: [react()],
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    server: {
+      proxy: {
+        '/api': 'http://localhost:8787'
+      }
+    }
   }
 })
