@@ -2,14 +2,15 @@
   "name": "stack",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun astro dev",
+    "client": "bunx --bun astro dev",
     "build": "bunx --bun astro build",
     "preview": "bunx --bun astro preview",
     "astro": "astro",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "worker": "wrangler dev"
+    "worker": "wrangler dev",
+    "dev": "concurrently \"bun run client\" \"bun run worker\""
   },
   "dependencies": {
     "@astrojs/react": "6.0.5",
@@ -26,6 +27,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
+    "concurrently": "^10.0.5",
     "daisyui": "^5.7.22",
     "eslint": "^10.9.1",
     "eslint-plugin-astro": "^3.1.0",
