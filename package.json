@@ -3,15 +3,18 @@
   "type": "module",
   "scripts": {
     "client": "bunx --bun astro dev",
-    "build": "bunx --bun astro build",
+    "build:client": "bunx --bun astro build",
     "preview": "bunx --bun astro preview",
     "astro": "astro",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "worker": "wrangler dev",
-    "deploy": "bun run build && wrangler deploy",
-    "dev": "concurrently \"bun run client\" \"bun run worker\""
+    "dev": "concurrently \"bun run client\" \"bun run worker\"",
+    "dryrun:staging": "bun run build:client && wrangler deploy --env staging --dry-run",
+    "dryrun:production": "bun run build:client && wrangler deploy --env production --dry-run",
+    "deploy:staging": "bun run build:client && wrangler deploy --env staging",
+    "deploy:production": "bun run build:client && wrangler deploy --env production"
   },
   "dependencies": {
     "@astrojs/react": "6.0.5",
