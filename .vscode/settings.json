@@ -5,5 +5,10 @@
   "editor.insertSpaces": true,
   "files.eol": "\n",
   "files.associations": { "*.css": "tailwindcss" },
-  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" }
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  }
 }
