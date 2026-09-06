@@ -9,5 +9,5 @@ export default function ServerStatus() {
       .then(setStatus)
   }, [])
 
-  return <div>Server status: {status}</div>
+  return <pre>{JSON.stringify(status, null, 2)}</pre>
 }
