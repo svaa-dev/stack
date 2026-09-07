@@ -9,7 +9,8 @@
       "@/assets/*": ["./src/client/assets/*"],
       "@/components/*": ["./src/client/components/*"],
       "@/layouts/*": ["./src/client/layouts/*"],
-      "@/styles/*": ["./src/client/styles/*"]
+      "@/styles/*": ["./src/client/styles/*"],
+      "@/db/*": ["./src/db/*"]
     }
   }
 }
