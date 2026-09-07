@@ -5,4 +5,4 @@ VALUES
   ('Lucia@yahoo.com'),
   ('Ana@gmail.com'),
   ('Marta@hotmail.com'),
-  ('Pedro@gmail.com'),
+  ('Pedro@gmail.com');
