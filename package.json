@@ -14,11 +14,18 @@
     "dryrun:staging": "bun run build:client && wrangler deploy --env staging --dry-run",
     "dryrun:production": "bun run build:client && wrangler deploy --env production --dry-run",
     "deploy:staging": "bun run build:client && wrangler deploy --env staging",
-    "deploy:production": "bun run build:client && wrangler deploy --env production"
+    "deploy:production": "bun run build:client && wrangler deploy --env production",
+    "db:generate": "drizzle-kit generate --config=drizzle.config.ts",
+    "db:create:staging": "wrangler d1 create stack-staging-db",
+    "db:create:production": "wrangler d1 create stack-production-db",
+    "db:migrate:local": "wrangler d1 migrations apply stack-development-db --local",
+    "db:migrate:staging": "wrangler d1 migrations apply stack-staging-db --remote --env staging",
+    "db:migrate:production": "wrangler d1 migrations apply stack-production-db --remote --env production"
   },
   "dependencies": {
     "@astrojs/react": "6.0.5",
     "astro": "7.3.1",
+    "drizzle-orm": "^0.45.2",
     "hono": "^4.13.7",
     "lucide-react": "^1.41.0",
     "react": "^19.2.8",
@@ -26,6 +33,7 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260906.1",
     "@eslint/js": "^10.0.1",
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
@@ -33,11 +41,13 @@
     "@types/react-dom": "^19.2.5",
     "concurrently": "^10.0.5",
     "daisyui": "^5.7.22",
+    "drizzle-kit": "^0.31.10",
     "eslint": "^10.9.1",
     "eslint-plugin-astro": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "prettier": "3.9.6",
     "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-sql": "^0.20.0",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "typescript-eslint": "^8.68.0",
     "wrangler": "^4.129.0"
