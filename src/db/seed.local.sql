@@ -5,4 +5,4 @@ VALUES
   ('0002@test.com'),
   ('0003@test.com'),
   ('0004@test.com'),
-  ('0005@test.com'),
+  ('0005@test.com');

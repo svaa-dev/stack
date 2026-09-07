@@ -10,4 +10,5 @@ export const users = sqliteTable(
   table => [check('email', sql`${table.email} LIKE '%@%.%'`)]
 )
 
+export type User = typeof users.$inferSelect
 export type NewUser = typeof users.$inferInsert

@@ -1,0 +1,10 @@
+### Obtener todos los usuarios
+GET http://127.0.0.1:8787/api/users
+
+### Crear un usuario
+POST http://127.0.0.1:8787/api/users
+Content-Type: application/json
+
+{
+  "email": "new@test.com"
+}
