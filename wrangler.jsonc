@@ -9,7 +9,7 @@
     "not_found_handling": "404-page"
   },
   "vars": {
-    "ENVIRONMENT": "development"
+    "ENVIRONMENT": "local"
   },
   "d1_databases": [
     {
