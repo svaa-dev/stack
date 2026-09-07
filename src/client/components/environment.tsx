@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 
-export default function ServerStatus() {
+export default function Environment() {
   const [status, setStatus] = useState('loading')
 
   useEffect(() => {
-    fetch('/api/health')
+    fetch('/api/environment')
       .then(res => res.text())
       .then(setStatus)
   }, [])
