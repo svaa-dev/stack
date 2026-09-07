@@ -14,7 +14,7 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "stack-development-db",
+      "database_name": "stack-local-db",
       "database_id": "local",
       "migrations_dir": "./src/db/migrations"
     }
@@ -28,7 +28,7 @@
         {
           "binding": "DB",
           "database_name": "stack-staging-db",
-          "database_id": "1a450ad6-348d-4813-8f60-4ac1b52ee2fa",
+          "database_id": "",
           "migrations_dir": "./src/db/migrations"
         }
       ]
