@@ -9,5 +9,5 @@ export default function Environment() {
       .then(setStatus)
   }, [])
 
-  return <div>{status}</div>
+  return <div className='font-bold'>{status}</div>
 }
