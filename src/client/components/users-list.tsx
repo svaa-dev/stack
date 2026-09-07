@@ -30,11 +30,19 @@ export default function UsersList() {
   }, [])
 
   if (isLoading) {
-    return <p aria-live='polite'>Cargando usuarios...</p>
+    return (
+      <p className='pt-4 text-sm' aria-live='polite'>
+        Cargando usuarios...
+      </p>
+    )
   }
 
   if (error) {
-    return <p role='alert'>{error}</p>
+    return (
+      <p className='pt-4 text-sm' role='alert'>
+        {error}
+      </p>
+    )
   }
 
   return (
