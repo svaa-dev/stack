@@ -6,6 +6,6 @@ type Bindings = {
 
 const app = new Hono<{ Bindings: Bindings }>()
 
-app.get('/api/health', c => c.json(c.env))
+app.get('/api/health', c => c.text(c.env.ENVIRONMENT))
 
 export default app

@@ -5,9 +5,9 @@ export default function ServerStatus() {
 
   useEffect(() => {
     fetch('/api/health')
-      .then(res => res.json())
+      .then(res => res.text())
       .then(setStatus)
   }, [])
 
-  return <pre>{JSON.stringify(status, null, 2)}</pre>
+  return <div>{status}</div>
 }
