@@ -2,7 +2,7 @@
 @plugin '@tailwindcss/typography';
 @plugin 'daisyui';
 @plugin 'daisyui/theme' {
-  name: 'my-theme';
+  name: 'app-theme';
   default: false;
   prefersdark: false;
   color-scheme: 'dark';
